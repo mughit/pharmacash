@@ -20,6 +20,7 @@ export function Sidebar() {
       synced: { icon: Cloud, label: isRTL ? "متزامن" : "Synced", color: "text-emerald-500" },
       syncing: { icon: RefreshCw, label: isRTL ? "كيتزامن..." : "Syncing...", color: "text-amber-500 animate-spin" },
       offline: { icon: CloudOff, label: isRTL ? "بلا نت" : "Offline", color: "text-rose-500" },
+      error: { icon: CloudOff, label: isRTL ? "خطأ فالمزامنة" : "Sync error", color: "text-rose-500" },
       "signed-out": { icon: CloudOff, label: "", color: "text-muted-foreground" },
     } as const;
     const c = config[syncStatus];
